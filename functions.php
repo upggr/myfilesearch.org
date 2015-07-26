@@ -4,7 +4,7 @@ ini_set('display_startup_errors',1);
 error_reporting(E_ALL); 
 
 function scraplatestsearchesfromkickass() {
-	$theurl = 'https://kickass.so/latest-searches/';
+	$theurl = 'https://kat.cr/latest-searches/';
 	$var = fread_url($theurl);  
     preg_match_all ("/a[\s]+[^>]*?href[\s]?=[\s\"\']+".
                     "(.*?)[\"\']+.*?>"."([^<]+|.*?)?<\/a>/", 
