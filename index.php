@@ -58,11 +58,11 @@ a:hover { border-bottom-width: 1px; border-bottom-style: dashed; border-bottom-c
 	
 	<?php 
 	if (isset($_GET["s"])) { ?>
-    	<div align="center"><a href="http://www.webtrackerplus.com/?page=flowplayerregister&a_aid=5788g1795s84s&a_bid=f2dddc66&q=<?php echo $_GET["s"]; ?>" target="_top"><img src="https://gs1.wac.edgecastcdn.net/8051D5/affbeat/banners/Movies-Hub/468x60/mov_468x60_2.png" alt="" title="" width="468" height="60" /></a></div>
+    	
    <div id="resultsDiv">
 <div class="pageContainer" style="">
 <div class="webResult">
-<h2><a href="http://www.webtrackerplus.com/?page=torrent&a_aid=5788g1795s84s&a_bid=0d823973&q=<?php echo $_GET["s"]; ?>">Download <?php echo $_GET["s"]; ?>  directly here (Verified)</a></h2>
+
   </div>
 </div>     
 
