@@ -5,7 +5,7 @@ A magnets torrent crawler
 
 This is a simple one page torrents magnet search that will spider results from multiple sources and display them on the same page
 
-You can see an example here : [myfilesearch.org](http://myfilesearch.org)   
+You can see an example here : [myfilesearch.org](http://x-mad.com)   
 
 
 You can host your site on [digital ocean](https://www.digitalocean.com/?refcode=6e83df0e17c6)
