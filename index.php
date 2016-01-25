@@ -79,7 +79,7 @@
         <div class="row">
             <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-2">
             <?php if (isset($_GET["s"])) { ?>
-            <p><?php scrapmagnetsite('https://kat.cr/usearch/',$_GET["s"],'/');} ?></p>
+            <p><?php scrapmagnetsite('https://kat.cr/usearch/test/');} ?></p>
       </div>  </div>
     </div>
 </section>
