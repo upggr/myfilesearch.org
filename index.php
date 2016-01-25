@@ -79,15 +79,8 @@
         <div class="row">
             <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-2">
             <?php if (isset($_GET["s"])) { ?>
-            <p><?php scrapmagnetsite('https://kat.cr/usearch/',$_POST["s"],'/');} ?></p>
+            <p><?php scrapmagnetsite('https://kat.cr/usearch/',$_GET["s"],'/');} ?></p>
       </div>  </div>
-    </div>
-    <div class="mbr-section__container container mbr-section__container--last">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-
-            </div>
-        </div>
     </div>
 </section>
 
