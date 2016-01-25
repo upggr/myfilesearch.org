@@ -53,7 +53,7 @@
                         </div>
                         <form class="mbr-form" action="index.php" method="post" data-form-title="x-mad magnet torrent search">  
                             <div class="mbr-form__left">
-                                <input type="email" class="form-control" name="s" required="" placeholder="enter search terms" data-form-field="Email">
+                                <input type="text" class="form-control1" name="s" required="" placeholder="enter search terms" data-form-field="s">
                             </div>
                             <div class="mbr-form__right mbr-buttons mbr-buttons--no-offset mbr-buttons--right"><button type="submit" class="mbr-buttons__btn btn btn-lg btn-danger">Search</button></div>
                         </form>
