@@ -51,7 +51,7 @@
                         <div class="mbr-header mbr-header--center mbr-header--std-padding">
                             <h2 class="mbr-header__text">x-mad magnet torrent search</h2>
                         </div>
-                        <div data-form-alert="true">
+                        <div data-form-alert="false">
                             <div class="hide" data-form-alert-success="true">Thanks for filling out form!</div>
                         </div>
                         <form class="mbr-form" action="index.php" method="post" data-form-title="x-mad magnet torrent search">  
@@ -88,7 +88,7 @@
     <div class="mbr-section__container container mbr-section__container--last">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
-                <div class="mbr-buttons mbr-buttons--center"><a class="mbr-buttons__btn btn btn-lg btn-default" href="https://mobirise.com">SEE ALL TEMPLATES</a></div>
+
             </div>
         </div>
     </div>
