@@ -51,7 +51,7 @@
                         <div class="mbr-header mbr-header--center mbr-header--std-padding">
                             <h2 class="mbr-header__text">x-mad magnet torrent search</h2>
                         </div>
-                        <form class="mbr-form" action="index.php" method="post" data-form-title="x-mad magnet torrent search">  
+                        <form class="mbr-form" action="index.php" method="GET" data-form-title="x-mad magnet torrent search">  
                             <div class="mbr-form__left">
                                 <input type="text" class="form-control1" name="s" required="" placeholder="enter search terms" data-form-field="s">
                             </div>
@@ -78,7 +78,7 @@
     <div class="mbr-section__container container mbr-section__container--middle">
         <div class="row">
             <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-2">
-            <?php if (isset($_POST["s"])) { ?>
+            <?php if (isset($_GET["s"])) { ?>
             <p><?php scrapmagnetsite('https://kat.cr/usearch/',$_POST["s"],'/');} ?></p>
       </div>  </div>
     </div>
