@@ -51,9 +51,9 @@
                         <div class="mbr-header mbr-header--center mbr-header--std-padding">
                             <h2 class="mbr-header__text">x-mad magnet torrent search</h2>
                         </div>
-                        <form class="mbr-form" action="index.php" method="GET" data-form-title="x-mad magnet torrent search">  
+                        <form class="mbr-form" action="index.php" method="POST" data-form-title="x-mad magnet torrent search">  
                             <div class="mbr-form__left">
-                                <input type="text" class="form-control1" name="s" required="" placeholder="enter search terms" data-form-field="s">
+                                <input type="text" class="form-control" name="s" required="" placeholder="enter search terms" data-form-field="s">
                             </div>
                             <div class="mbr-form__right mbr-buttons mbr-buttons--no-offset mbr-buttons--right"><button type="submit" class="mbr-buttons__btn btn btn-lg btn-danger">Search</button></div>
                         </form>
@@ -78,10 +78,11 @@
     <div class="mbr-section__container container mbr-section__container--middle">
         <div class="row">
             <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-2">
-            <?php //if (isset($_GET["s"])) { ?>
-            <p><?php scrapmagnetsite('https://kat.cr/usearch/test/');//} ?></p>
+            <?php if (isset($_POST["s"])) { ?>
+            <p><?php scrapmagnetsite('https://kat.cr/usearch/',$_POST["s"],'/');} ?></p>
       </div>  </div>
     </div>
+
 </section>
 
 <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="social-buttons1-2" style="background-color: rgb(255, 255, 255);">
