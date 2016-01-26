@@ -63,13 +63,8 @@ $var = fread_url($theurl);
 	if ($i < 20) {
 			$sUrl = $dtarget;
  
- //  echo '<a href="'.$sUrl.'" title="Download '.$dtitle.' via magnet link">'.$dtitle.'</a><br>'; 
-echo '<div id="resultsDiv">
-<div class="pageContainer" style="">
-<div class="webResult">
-<h2><a href="'.$sUrl.'" target="_blank">'.$cleantitle.'</a></h2>
-  </div>
-</div>';
+   echo '<a href="'.$sUrl.'" title="Download '.$dtitle.' via magnet link">'.$dtitle.'</a><br>'; 
+//echo '<div id="resultsDiv"><div class="pageContainer" style=""><div class="webResult"><h2><a href="'.$sUrl.'" target="_blank">'.$cleantitle.'</a></h2> </div></div>';
  
 	}
 	else {
