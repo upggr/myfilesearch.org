@@ -26,7 +26,7 @@
                 <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
                     <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
                         
-                        <span class="mbr-brand__name"><a class="mbr-brand__name text-white" href="https://mobirise.com">X-MAD.COM</a></span>
+                        <span class="mbr-brand__name"><a class="mbr-brand__name text-white" href="index.php">X-MAD.COM</a></span>
                     </span>
                 </div>
                 <div class="mbr-navbar__hamburger mbr-hamburger text-white"><span class="mbr-hamburger__line"></span></div>
