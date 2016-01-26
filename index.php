@@ -26,7 +26,7 @@
                 <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
                     <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
                         
-                        <span class="mbr-brand__name"><a class="mbr-brand__name text-white" href="index.php"><?php echo str_replace('www.','', $_SERVER['SERVER_NAME']);?></a></span>
+                        <span class="mbr-brand__name"><a class="mbr-brand__name text-white" href="index.php"><?php echo $_SERVER['HTTP_HOST'];?></a></span>
                     </span>
                 </div>
                 <div class="mbr-navbar__hamburger mbr-hamburger text-white"><span class="mbr-hamburger__line"></span></div>
@@ -49,7 +49,7 @@
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2" data-form-type="formoid1">
                         <div class="mbr-header mbr-header--center mbr-header--std-padding">
-                            <h2 class="mbr-header__text"><?php echo str_replace('www.','', $_SERVER['SERVER_NAME']);?> magnet torrent search</h2>
+                            <h2 class="mbr-header__text"><?php echo $_SERVER['HTTP_HOST'];?> magnet torrent search</h2>
                         </div>
                         <form class="mbr-form" action="index.php" method="POST" data-form-title="<?php echo str_replace('www.','', $_SERVER['SERVER_NAME']);?> magnet torrent search">  
                             <div class="mbr-form__left">
