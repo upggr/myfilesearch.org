@@ -26,13 +26,13 @@
                 <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
                     <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
                         
-                        <span class="mbr-brand__name"><a class="mbr-brand__name text-white" href="index.php">X-MAD.COM</a></span>
+                        <span class="mbr-brand__name"><a class="mbr-brand__name text-white" href="index.php"><?php echo str_replace('www.','', $_SERVER['SERVER_NAME']);?></a></span>
                     </span>
                 </div>
                 <div class="mbr-navbar__hamburger mbr-hamburger text-white"><span class="mbr-hamburger__line"></span></div>
                 <div class="mbr-navbar__column mbr-navbar__menu">
                     <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
-                        <div class="mbr-navbar__column"><ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active"><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.php">Home</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="">Latest Movies</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="">Latest Series</a></li></ul></div>
+                        <div class="mbr-navbar__column"><ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active"><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.php">Home</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.php?t=movies">Latest Movies</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.php?t=tv">Latest Series</a></li></ul></div>
                         <div class="mbr-navbar__column"><ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active"><li class="mbr-navbar__item"><a class="mbr-buttons__btn btn btn-danger" href="">Ideas</a></li></ul></div>
                     </nav>
                 </div>
@@ -49,9 +49,9 @@
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2" data-form-type="formoid1">
                         <div class="mbr-header mbr-header--center mbr-header--std-padding">
-                            <h2 class="mbr-header__text">x-mad magnet torrent search</h2>
+                            <h2 class="mbr-header__text"><?php echo str_replace('www.','', $_SERVER['SERVER_NAME']);?> magnet torrent search</h2>
                         </div>
-                        <form class="mbr-form" action="index.php" method="POST" data-form-title="x-mad magnet torrent search">  
+                        <form class="mbr-form" action="index.php" method="POST" data-form-title="<?php echo str_replace('www.','', $_SERVER['SERVER_NAME']);?> magnet torrent search">  
                             <div class="mbr-form__left">
                                 <input type="text" class="form-control" name="s" required="" placeholder="enter search terms" data-form-field="s">
                             </div>
@@ -78,8 +78,12 @@
     <div class="mbr-section__container container mbr-section__container--middle">
         <div class="row">
             <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-2">
+            
             <?php if (isset($_POST["s"])) { ?>
             <p><?php scrapmagnetsite('https://kat.cr/usearch/',$_POST["s"],'/');} ?></p>
+            
+            <?php if (isset($_GET["t"])) { ?>
+            <p><?php scrapmagnetsite('https://kat.cr/',$_GET["s"],'/');} ?></p>
       </div>  </div>
     </div>
 
