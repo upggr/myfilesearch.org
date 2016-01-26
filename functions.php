@@ -67,7 +67,7 @@ $var = fread_url($theurl);
 echo '<div id="resultsDiv">
 <div class="pageContainer" style="">
 <div class="webResult">
-<h2><a href="'.$sUrl.'" target="_blank">Download <b>'.$thekeyword.'</b> : '.$cleantitle.'</a></h2>
+<h2><a href="'.$sUrl.'" target="_blank">'.$cleantitle.'</a></h2>
   </div>
 </div>';
  

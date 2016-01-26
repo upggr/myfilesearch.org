@@ -70,7 +70,7 @@
     <div class="mbr-section__container container mbr-section__container--first">
         <div class="mbr-header mbr-header--wysiwyg row">
             <div class="col-sm-8 col-sm-offset-2">
-               <?php if (isset($_POST["s"])) { ?> <h3 class="mbr-header__text">Results for :&nbsp;<? echo $_POST["s"];?></h3><?php } ;?>
+               <?php if (isset($_POST["s"])) { ?> <h3 class="mbr-header__text">Results for : <? echo $_POST["s"];?></h3><?php } ;?>
                 
             </div>
         </div>
