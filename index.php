@@ -86,7 +86,7 @@
             <p><?php scrapmagnetsite('https://kat.cr/',$_GET["t"],'/');} ?></p>
             
              <?php if (isset($_GET["a"])) { ?>
-            <p><?php scrapmagnetsite('https://eztv.ag/');} ?></p>
+            <p><?php scrapmagnetsite('https://eztv.ag/',$_GET["a"],'/');} ?></p>
             
       </div>  </div>
     </div>
