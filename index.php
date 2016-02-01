@@ -147,17 +147,7 @@ owa_cmds.push(['trackDomStream']);
 </script>
 <!-- End Open Web Analytics Code -->
 
-<!--
-<script>
-var poplink = 'http://www.howtogetnetflix.com';
-var popheight = 768;
-var popwidth = 1200;
-</script> 
--->
-<script type="text/javascript" src="popunder/src/jquery.min.js"></script>
-<script type="text/javascript" src="popunder/jquery-cookie/jquery.cookie.js"></script>
-<script type="text/javascript" src="popunder/src/jquery.popunder.js"></script>
-<script type="text/javascript" src="popunder/ad.js.php"></script>
+
 
 </body>
 </html>
