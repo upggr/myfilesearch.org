@@ -32,7 +32,7 @@
                 <div class="mbr-navbar__hamburger mbr-hamburger text-white"><span class="mbr-hamburger__line"></span></div>
                 <div class="mbr-navbar__column mbr-navbar__menu">
                     <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
-                        <div class="mbr-navbar__column"><ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active"><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.php">Home</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.php?t=movies">Latest Movies</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.php?t=tv">Latest Series</a></li></ul></div>
+                        <div class="mbr-navbar__column"><ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active"><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.php">Home</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.php?t=movies">Most seeded Movies</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.php?t=tv">Most seeded Series</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.php?a=tv">Fresh Series</a></li></ul></div>
                         <div class="mbr-navbar__column"><ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active"><li class="mbr-navbar__item"><a class="mbr-buttons__btn btn btn-danger" href="">Ideas</a></li></ul></div>
                     </nav>
                 </div>
@@ -84,6 +84,10 @@
             
             <?php if (isset($_GET["t"])) { ?>
             <p><?php scrapmagnetsite('https://kat.cr/',$_GET["t"],'/');} ?></p>
+            
+             <?php if (isset($_GET["a"])) { ?>
+            <p><?php scrapmagnetsite('https://eztv.ag/');} ?></p>
+            
       </div>  </div>
     </div>
 
