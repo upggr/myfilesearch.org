@@ -131,25 +131,23 @@
   <script src="assets/mobirise/js/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
   
-  <!-- Start Open Web Analytics Tracker -->
+<!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
-//<![CDATA[
-var owa_baseUrl = 'http://analytics.upg.gr/';
-var owa_cmds = owa_cmds || [];
-owa_cmds.push(['setSiteId', '3e90e6906a8821300255652113a6ab0e']);
-owa_cmds.push(['trackPageView']);
-owa_cmds.push(['trackClicks']);
-owa_cmds.push(['trackDomStream']);
-
-(function() {
-	var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
-	owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
-	_owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
-	var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
-}());
-//]]>
+var sc_project=10858297; 
+var sc_invisible=0; 
+var sc_security="02e5deb8"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
 </script>
-<!-- End Open Web Analytics Code -->
+<noscript><div class="statcounter"><a title="shopify stats"
+href="http://statcounter.com/shopify/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/10858297/0/02e5deb8/0/"
+alt="shopify stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
 
 
 
