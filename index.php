@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<?php include('functions.php');?>
+<?php include 'functions.php';?>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,13 +52,13 @@
                             <h2 class="mbr-header__text"><?php echo $_SERVER['HTTP_HOST'];?> magnet torrent search</h2>
                         </div>
 <div class="mbr-header mbr-header--center mbr-header--std-padding">
-                        <script type="text/javascript">document.write("<iframe name='banner' src='https://affiliategroove.com/scripts/banner.php?a_aid=57573c8b37e42&a_bid=b6117564&w=1' framespacing='0' frameborder='no' scrolling='no' width='728' height='90' allowtransparency='true'><a href='https://www.ipvanish.com/torrents-vpn?a_aid=57573c8b37e42&amp;a_bid=b6117564' target='_top'>IPV 728x90 (set 8)</a></iframe>");
+  <script type="text/javascript">document.write("<iframe name='banner' src='https://www.affiliategroove.com/scripts/banner.php?a_aid=57573c8b37e42&a_bid=b6117564&w=1' framespacing='0' frameborder='no' scrolling='no' width='728' height='90' allowtransparency='true'><a href='https://www.ipvanish.com/torrents-vpn?a_aid=57573c8b37e42&amp;a_bid=b6117564' target='_top'>IPV 728x90 (set 8)</a></iframe>");
 </script>
 <noscript>
 <h2><a href="https://www.ipvanish.com/torrents-vpn">IPV 728x90 (set 8)</a></h2>
 </noscript>
 </div>
-                        <form class="mbr-form" action="index.php" method="POST" data-form-title="<?php echo str_replace('www.','', $_SERVER['SERVER_NAME']);?> magnet torrent search">
+                        <form class="mbr-form" action="index.php" method="POST" data-form-title="<?php echo str_replace('www.', '', $_SERVER['SERVER_NAME']);?> magnet torrent search">
                             <div class="mbr-form__left">
                                 <input type="text" class="form-control" name="s" required="" placeholder="enter search terms" data-form-field="s">
                             </div>
@@ -78,7 +78,10 @@
         <div class="mbr-header mbr-header--wysiwyg row">
             <div class="col-sm-8 col-sm-offset-2">
 
-               <?php if (isset($_POST["s"])) { ?> <h3 class="mbr-header__text">Results : <? echo $_POST["s"];?></h3><?php } ;?>
+               <?php if (isset($_POST['s'])) {
+    ?> <h3 class="mbr-header__text">Results : <?php echo $_POST['s'];
+    ?></h3><?php
+};?>
 
             </div>
         </div>
@@ -87,14 +90,20 @@
         <div class="row">
             <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-2">
 
-            <?php if (isset($_POST["s"])) { ?>
-            <p><?php scrapmagnetsite('https://kat.cr/usearch/',$_POST["s"],'/');} ?></p>
+            <?php if (isset($_POST['s'])) {
+    ?>
+            <p><?php scrapmagnetsite('https://kat.cr/usearch/', $_POST['s'], '/');
+} ?></p>
 
-            <?php if (isset($_GET["t"])) { ?>
-            <p><?php scrapmagnetsite('https://kat.cr/',$_GET["t"],'/');} ?></p>
+            <?php if (isset($_GET['t'])) {
+    ?>
+            <p><?php scrapmagnetsite('https://kat.cr/', $_GET['t'], '/');
+} ?></p>
 
-             <?php if (isset($_GET["a"])) { ?>
-            <p><?php scrapmagnetsite('https://eztv.ag','','/');} ?></p>
+             <?php if (isset($_GET['a'])) {
+    ?>
+            <p><?php scrapmagnetsite('https://eztv.ag', '', '/');
+} ?></p>
 
       </div>  </div>
     </div>
