@@ -7,15 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
   <meta name="description" content="">
-  
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/socicon/css/socicon.min.css">
   <link rel="stylesheet" href="assets/mobirise/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
+
+
+
 </head>
 <body>
 
@@ -25,7 +25,7 @@
             <div class="mbr-navbar__container">
                 <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
                     <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
-                        
+
                         <span class="mbr-brand__name"><a class="mbr-brand__name text-white" href="index.php"><?php echo $_SERVER['HTTP_HOST'];?></a></span>
                     </span>
                 </div>
@@ -42,7 +42,7 @@
 </section>
 
 <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-after-navbar" id="form2-1" style="background-color: rgb(239, 239, 239);">
-    
+
     <div class="mbr-section__container mbr-section__container--sm-padding container">
         <div class="row">
             <div class="col-sm-12">
@@ -51,7 +51,14 @@
                         <div class="mbr-header mbr-header--center mbr-header--std-padding">
                             <h2 class="mbr-header__text"><?php echo $_SERVER['HTTP_HOST'];?> magnet torrent search</h2>
                         </div>
-                        <form class="mbr-form" action="index.php" method="POST" data-form-title="<?php echo str_replace('www.','', $_SERVER['SERVER_NAME']);?> magnet torrent search">  
+<div class="mbr-header mbr-header--center mbr-header--std-padding">
+                        <script type="text/javascript">document.write("<iframe name='banner' src='https://affiliategroove.com/scripts/banner.php?a_aid=57573c8b37e42&a_bid=b6117564&w=1' framespacing='0' frameborder='no' scrolling='no' width='728' height='90' allowtransparency='true'><a href='https://www.ipvanish.com/torrents-vpn?a_aid=57573c8b37e42&amp;a_bid=b6117564' target='_top'>IPV 728x90 (set 8)</a></iframe>");
+</script>
+<noscript>
+<h2><a href="https://www.ipvanish.com/torrents-vpn">IPV 728x90 (set 8)</a></h2>
+</noscript>
+</div>
+                        <form class="mbr-form" action="index.php" method="POST" data-form-title="<?php echo str_replace('www.','', $_SERVER['SERVER_NAME']);?> magnet torrent search">
                             <div class="mbr-form__left">
                                 <input type="text" class="form-control" name="s" required="" placeholder="enter search terms" data-form-field="s">
                             </div>
@@ -66,35 +73,36 @@
 </section>
 
 <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="msg-box3-3" style="background-color: rgb(255, 255, 255);">
-    
+
     <div class="mbr-section__container container mbr-section__container--first">
         <div class="mbr-header mbr-header--wysiwyg row">
             <div class="col-sm-8 col-sm-offset-2">
+
                <?php if (isset($_POST["s"])) { ?> <h3 class="mbr-header__text">Results : <? echo $_POST["s"];?></h3><?php } ;?>
-                
+
             </div>
         </div>
     </div>
     <div class="mbr-section__container container mbr-section__container--middle">
         <div class="row">
             <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-2">
-            
+
             <?php if (isset($_POST["s"])) { ?>
             <p><?php scrapmagnetsite('https://kat.cr/usearch/',$_POST["s"],'/');} ?></p>
-            
+
             <?php if (isset($_GET["t"])) { ?>
             <p><?php scrapmagnetsite('https://kat.cr/',$_GET["t"],'/');} ?></p>
-            
+
              <?php if (isset($_GET["a"])) { ?>
             <p><?php scrapmagnetsite('https://eztv.ag','','/');} ?></p>
-            
+
       </div>  </div>
     </div>
 
 </section>
 
 <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="social-buttons1-2" style="background-color: rgb(255, 255, 255);">
-    
+
 
     <div class="mbr-section__container container">
         <div class="mbr-header mbr-header--inline row">
@@ -105,11 +113,11 @@
                 <div class="mbr-social-likes social-likes_style-1" data-counters="true">
                     <div class="mbr-social-icons__icon social-likes__icon facebook socicon-bg-facebook" title="Share link on Facebook">
                         <i class="socicon socicon-facebook"></i>
-                        
+
                     </div>
                     <div class="mbr-social-icons__icon social-likes__icon plusone socicon-bg-googleplus" title="Share link on Google+">
                         <i class="socicon socicon-googleplus"></i>
-                        
+
                     </div>
                     <div class="mbr-social-icons__icon social-likes__icon twitter socicon-bg-twitter" title="Share link on Twitter">
                         <i class="socicon socicon-twitter"></i>
@@ -130,12 +138,12 @@
   <script src="assets/social-likes/social-likes.js"></script>
   <script src="assets/mobirise/js/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
-  
+
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
-var sc_project=10858297; 
-var sc_invisible=0; 
-var sc_security="02e5deb8"; 
+var sc_project=10858297;
+var sc_invisible=0;
+var sc_security="02e5deb8";
 var scJsHost = (("https:" == document.location.protocol) ?
 "https://secure." : "http://www.");
 document.write("<sc"+"ript type='text/javascript' src='" +
