@@ -109,6 +109,12 @@ scrapmagnetsite('https://thepiratebay.org/search/', $_POST['s'], '/0/99/0');
             <p><?php scrapmagnetsite('https://eztv.ag', '', '/');
 } ?></p>
 
+<?php if (isset($_GET['d'])) {
+?>
+<p><?php include('disclaimer.php');
+} ?></p>
+
+
       </div>  </div>
     </div>
 
