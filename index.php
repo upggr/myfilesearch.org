@@ -93,12 +93,15 @@
 
             <?php if (isset($_POST['s'])) {
     ?>
-            <p><?php scrapmagnetsite('https://kat.cr/usearch/', $_POST['s'], '/');
+            <p><?php
+https://thepiratebay.org/search/test/0/99/0
+scrapmagnetsite('https://thepiratebay.org/search/test', $_POST['s'], '/0/99/0');
+            //scrapmagnetsite('https://kat.cr/usearch/', $_POST['s'], '/');
 } ?></p>
 
             <?php if (isset($_GET['t'])) {
     ?>
-            <p><?php scrapmagnetsite('https://kat.cr/', $_GET['t'], '/');
+            <p><?php scrapmagnetsite('https://thepiratebay.org/top/201', $_GET['t'], '/');
 } ?></p>
 
              <?php if (isset($_GET['a'])) {
