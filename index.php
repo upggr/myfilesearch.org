@@ -33,7 +33,7 @@
                 <div class="mbr-navbar__column mbr-navbar__menu">
                     <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
                         <div class="mbr-navbar__column"><ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active"><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.php">Home</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.php?t=movies">Most seeded Movies</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.php?t=tv">Most seeded Series</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.php?a=tv">Fresh Series</a></li></ul></div>
-                        <div class="mbr-navbar__column"><ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active"><li class="mbr-navbar__item"><a class="mbr-buttons__btn btn btn-danger" href="">Ideas</a></li></ul></div>
+                        <div class="mbr-navbar__column"><ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active"><li class="mbr-navbar__item"><a class="mbr-buttons__btn btn btn-danger" href="/?d">Disclaimer</a></li></ul></div>
                     </nav>
                 </div>
             </div>
@@ -51,6 +51,8 @@
                         <div class="mbr-header mbr-header--center mbr-header--std-padding">
                             <h2 class="mbr-header__text"><?php echo $_SERVER['HTTP_HOST'];?> magnet torrent search</h2>
                         </div>
+
+<!--
 <div class="mbr-header mbr-header--center mbr-header--std-padding">
   <script type="text/javascript">document.write("<iframe name='banner' src='https://www.affiliategroove.com/scripts/banner.php?a_aid=57573c8b37e42&a_bid=b6117564&w=1' framespacing='0' frameborder='no' scrolling='no' width='728' height='90' allowtransparency='true'><a href='https://www.ipvanish.com/torrents-vpn?a_aid=57573c8b37e42&amp;a_bid=b6117564' target='_top'>IPV 728x90 (set 8)</a></iframe>");
 </script>
@@ -58,6 +60,7 @@
 <h2><a href="https://www.ipvanish.com/torrents-vpn">IPV 728x90 (set 8)</a></h2>
 </noscript>
 </div>
+-->
                         <form class="mbr-form" action="index.php" method="POST" data-form-title="<?php echo str_replace('www.', '', $_SERVER['SERVER_NAME']);?> magnet torrent search">
                             <div class="mbr-form__left">
                                 <input type="text" class="form-control" name="s" required="" placeholder="enter search terms" data-form-field="s">
@@ -110,8 +113,8 @@ scrapmagnetsite('https://thepiratebay.org/search/', $_POST['s'], '/0/99/0');
 } ?></p>
 
 <?php if (isset($_GET['d'])) {
-?>
-<p><?php include('disclaimer.php');
+    ?>
+<p><?php include 'disclaimer.php';
 } ?></p>
 
 

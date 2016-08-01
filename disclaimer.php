@@ -1,0 +1,1 @@
+Our website is based on an opensource project listed on <a href="https://github.com/upggr/myfilesearch.org" target="_blank">github</a>. We do not host any files here or magnet links. We do not even have a database. Magnet link scrapping is done in your browser.
