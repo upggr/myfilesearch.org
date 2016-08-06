@@ -236,10 +236,11 @@ function startapi()
         switch ($_GET['type']) {
             case 'ripurl':
             header('Content-Type: text/plain');
-						if (isset($_GET['type'])) {
-                converturl($_GET['url']);
-							}
-							else {echo 'no url defined';}
+                        if (isset($_GET['url'])) {
+                            converturl($_GET['url']);
+                        } else {
+                                echo 'no url defined';
+                            }
                 break;
     case 'Select api response':
         echo '';
