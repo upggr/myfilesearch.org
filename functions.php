@@ -256,7 +256,8 @@ function startapi()
         echo '';
         break;
 }
-    } else {
+
+	  } else {
         echo "<form>
 	<select name='type' onchange='this.form.submit()'>
 		<option selected>Select api response</option>
