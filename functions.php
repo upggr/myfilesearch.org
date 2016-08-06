@@ -248,87 +248,22 @@ function startapi()
 {
     if (isset($_GET['type'])) {
         switch ($_GET['type']) {
-    case 'roku':
-    header('Content-Type: text/xml');
-        db_connect();
-        echo '<?xml version="1.0" encoding="UTF-8"?><orml version="1.2" xmlns="http://sourceforge.net/p/openrokn/home/ORML"><channel> <item type="poster" style="flat-episodic-16x9" title="GREEK TV" shortdesc="GreekTV" sdposterurl="pkg:/images/sdvideos.png" hdposterurl="pkg:/images/hdvideos.png">';
-        echo db_select("select * from content where type2 = 'tv' and active = '1' and live_upg = 1 order by ord desc", 'roku');
-        // echo db_select("select * from content where type2 = 'tv' and active = '1' order by ord desc", 'roku');
-        echo '</item></channel></orml>';
-        break;
-
-        case 'kodi':
-        header('Content-Type: text/plain');
-            db_connect();
-            echo db_select("select * from content where type2 = 'tv' and active = '1' and live_upg = 1 order by ord desc", 'roku');
-        //    echo db_select("select * from content where type2 = 'tv' and active = '1' order by ord desc", 'roku');
-            break;
-
             case 'ripurl':
             header('Content-Type: text/plain');
                 converturl($_GET['url']);
                 break;
-
-    case 'tvos':
-    header('Content-Type: application/javascript');
-        db_connect();
-        echo 'var Template = function() { return `<?xml version="1.0" encoding="UTF-8" ?><document><catalogTemplate><banner><title>Greek TV by UPG.GR</title></banner><list><section><listItemLockup><title>Greek TV</title><decorationLabel>Live</decorationLabel><relatedContent><grid><section>';
-        echo db_select("select * from content where type2 = 'tv' and active = '1'  order by ord desc", 'tvos');
-        echo '</section></grid></relatedContent></listItemLockup></section>';
-        echo '<section><listItemLockup><title>Greek Radio</title><decorationLabel>Live</decorationLabel><relatedContent><grid><section>';
-        echo db_select("select * from content where type2 = 'radio' and active = '1'  order by ord desc", 'tvos');
-        echo '</section></grid></relatedContent></listItemLockup></section>';
-        echo '</list></catalogTemplate></document>`}';
-        break;
-    case 'web':
-        header('Content-Type: text/xml');
-        db_connect();
-        echo '<?xml version="1.0" encoding="UTF-8"?><orml version="1.2" xmlns="http://sourceforge.net/p/openrokn/home/ORML"><channel> <item type="poster" style="flat-episodic-16x9" title="GREEK TV" shortdesc="GreekTV" sdposterurl="pkg:/images/sdvideos.png" hdposterurl="pkg:/images/hdvideos.png">';
-      //  echo db_select("select * from content where type2 = 'tv' and active = '1'  order by ord desc", 'roku');
-        echo db_select("select * from content where type2 = 'tv' and active = '1' and live_upg = 1 order by ord desc", 'roku');
-        echo '</item></channel></orml>';
-        break;
-    case 'plex':
-        header('Content-Type: text/xml');
-        db_connect();
-        echo '<?xml version="1.0" encoding="UTF-8"?><orml version="1.2" xmlns="http://sourceforge.net/p/openrokn/home/ORML"><channel> <item type="poster" style="flat-episodic-16x9" title="GREEK TV" shortdesc="GreekTV" sdposterurl="pkg:/images/sdvideos.png" hdposterurl="pkg:/images/hdvideos.png">';
-        echo db_select("select * from content where type2 = 'tv' and active = '1'  order by ord desc", 'roku');
-        echo '</item></channel></orml>';
-        break;
-    case 'all':
-         db_connect();
-        echo db_select('select * from content order by ord desc', 'all');
-        break;
     case 'Select api response':
         echo '';
-        break;
-    case 'vlc':
-    header('Content-Type: audio/mpegurl;');
-     db_connect();
-        echo '#EXTM3U';
-        echo db_select("select * from content where active = '1'  order by ord desc", 'vlc');
-    break;
-    case 'findactive':
-         db_connect();
-        echo db_select('select * from content  order by ord desc', 'findactive');
         break;
 }
     } else {
         echo "<form>
 	<select name='type' onchange='this.form.submit()'>
 		<option selected>Select api response</option>
-		<option>roku</option>
-  		<option>tvos</option>
-  		<option>web</option>
-		<option>plex</option>
-    <option>kodi</option>
-		<option>vlc</option>
     <option>ripurl</option>
-		<option>all</option>
-		<option>findactive</option>
 	</select>
 	<noscript><input type='submit' value='Submit'></noscript>
-	</form><br> Note that -Find active- takes time as it checks every stream individually";
+	</form>";
     }
 }
 
