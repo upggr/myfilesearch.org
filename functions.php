@@ -239,8 +239,8 @@ function startapi()
                         if (isset($_GET['url'])) {
                             converturl($_GET['url']);
                         } else {
-                                echo 'no url defined';
-                            }
+                            echo 'no url defined';
+                        }
                 break;
     case 'Select api response':
         echo '';
@@ -271,6 +271,7 @@ function converturl($url)
         $dtitle = str_replace('+', ' ', $dtitle);
         $dtitle = str_replace('.', ' ', $dtitle);
         $dtitle = str_replace(' TehMovies com ', '', $dtitle);
+				$dtitle = str_replace(' TehMovies Com ', '', $dtitle);		  
         $dtitle = str_replace('%5D', ']', $dtitle);
         $dtitle = str_replace('%5B', '[', $dtitle);
         $dtitle = str_replace('%28', '(', $dtitle);
