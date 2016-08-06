@@ -255,7 +255,8 @@ function startapi()
     case 'Select api response':
         echo '';
         break;
-
+}
+}
     } else {
         echo "<form>
 	<select name='type' onchange='this.form.submit()'>
