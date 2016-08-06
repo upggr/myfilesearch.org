@@ -298,31 +298,4 @@ function converturl($url)
     }
 }
 
-function fread_url($url, $ref = '')
-{
-    if (function_exists('curl_init')) {
-        $ch = curl_init();
-        $user_agent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3';
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_ENCODING, 'gzip');
-        curl_setopt($ch, CURLOPT_HTTPGET, 1);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        if (!ini_get('safe_mode')) {
-        }
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_REFERER, $ref);
-        curl_setopt($ch, CURLOPT_COOKIEJAR, 'cookie.txt');
-        $html = curl_exec($ch);
-        curl_close($ch);
-    } else {
-        $hfile = fopen($url, 'r');
-        if ($hfile) {
-            while (!feof($hfile)) {
-                $html .= fgets($hfile, 1024);
-            }
-        }
-    }
-
-    return $html;
-}
 ?>
