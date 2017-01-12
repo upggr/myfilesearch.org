@@ -106,9 +106,9 @@ scrapmagnetsite('https://thepiratebay.org/search/', $_POST['s'], '/0/99/0');
     ?>
             <p><?php 
   if ($_GET['t'] == 'tv') 
-  {scrapmagnetsite('https://thepiratebay.org/top/205/', $_GET['t'], '/');}
+  {scrapmagnetsite('https://thepiratebay.org/top/205', '', '/');}
   elseif ($_GET['t'] == 'movies') 
-  {scrapmagnetsite('https://thepiratebay.org/top/201/', $_GET['t'], '/');}
+  {scrapmagnetsite('https://thepiratebay.org/top/201','', '/');}
 } ?></p>
 
              <?php if (isset($_GET['a'])) {
