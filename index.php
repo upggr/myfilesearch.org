@@ -97,8 +97,9 @@
             <?php if (isset($_POST['s'])) {
     ?>
             <p><?php
-https://thepiratebay.org/search/test/0/99/0
+//https://thepiratebay.org/search/test/0/99/0
 scrapmagnetsite('https://thepiratebay.org/search/', $_POST['s'], '/0/99/0');
+scrapmagnetsite('https://thepiratebay.org/search/', $_POST['s'], '/1/7//');
             //scrapmagnetsite('https://kat.cr/usearch/', $_POST['s'], '/');
 } ?></p>
 
@@ -165,9 +166,5 @@ scrapmagnetsite('https://thepiratebay.org/search/', $_POST['s'], '/0/99/0');
   <script src="assets/mobirise/js/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
 
-
-
-
-xxxx
 </body>
 </html>
