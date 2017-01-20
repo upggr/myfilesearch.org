@@ -100,6 +100,10 @@
 //https://thepiratebay.org/search/test/0/99/0
 scrapmagnetsite('https://thepiratebay.org/search/', $_POST['s'], '/0/99/0');
 scrapmagnetsite('https://thepiratebay.org/search/', $_POST['s'], '/1/7//');
+scrapmagnetsite('https://extratorrent.cc/search/?search=', $_POST['s'], '&new=1&x=0&y=0');
+
+
+
             //scrapmagnetsite('https://kat.cr/usearch/', $_POST['s'], '/');
 } ?></p>
 
