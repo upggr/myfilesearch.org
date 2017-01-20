@@ -100,7 +100,7 @@
 //https://thepiratebay.org/search/test/0/99/0
 scrapmagnetsite('https://thepiratebay.org/search/', $_POST['s'], '/0/99/0');
 scrapmagnetsite('https://thepiratebay.org/search/', $_POST['s'], '/1/7//');
-
+scrapmagnetsite('http://http://distorrent.com//usearch/', $_POST['s'], '/');
 
 
             //scrapmagnetsite('https://kat.cr/usearch/', $_POST['s'], '/');
