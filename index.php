@@ -98,21 +98,22 @@
     ?>
             <p><?php
 //https://thepiratebay.org/search/test/0/99/0
-scrapmagnetsite('http://thepiratebay.se.com/search/', $_POST['s'], '/0/99/0');
-scrapmagnetsite('http://thepiratebay.se.com/search/', $_POST['s'], '/1/7//');
-//scrapmagnetsite('http://http://distorrent.com//usearch/', $_POST['s'], '/');
+scrapmagnetsite('https://thepiratebay.org/search/', $_POST['s'], '/0/99/0');
+//scrapmagnetsite('http://thepiratebay.se.com/search/', $_POST['s'], '/0/99/0');
+scrapmagnetsite('https://thepiratebay.org', $_POST['s'], '/1/7//');
+//scrapmagnetsite('http://thepiratebay.se.com/search/', $_POST['s'], '/1/7//');
 
-
-            //scrapmagnetsite('https://kat.cr/usearch/', $_POST['s'], '/');
 } ?></p>
 
             <?php if (isset($_GET['t'])) {
     ?>
             <p><?php
   if ($_GET['t'] == 'tv')
-  {scrapmagnetsite('http://thepiratebay.se.com/top/205', '', '/');}
+  {scrapmagnetsite('https://thepiratebay.org/top/205', '', '/');}
+//  {scrapmagnetsite('http://thepiratebay.se.com/top/205', '', '/');}
   elseif ($_GET['t'] == 'movies')
-  {scrapmagnetsite('http://thepiratebay.se.com/top/201','', '/');}
+  {scrapmagnetsite('https://thepiratebay.org/top/201','', '/');}
+//  {scrapmagnetsite('http://thepiratebay.se.com/top/201','', '/');}
 } ?></p>
 
              <?php if (isset($_GET['a'])) {
